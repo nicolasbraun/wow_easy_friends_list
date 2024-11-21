@@ -840,7 +840,7 @@ function WFEZ_O:SET_GROUP(id,groupName)
 
 	if not group then
 		-- WFEZ_O:DEBUG('REGISTER','redo',groupName)
-		group = WFEZ_O:FRAM(x,"CheckButton",WFEZ_F.child,"ChatConfigCheckButtonTemplate",nil,nil,nil,nil,nil,WFEZ_D.fonts.TXT_14,WFEZ_D.fonts.TXT_14)
+		group = WFEZ_O:FRAM(x,"CheckButton",WFEZ_F.child,nil,nil,nil,nil,nil,nil,WFEZ_D.fonts.TXT_14,WFEZ_D.fonts.TXT_14)
 		group:DisableDrawLayer("BACKGROUND")
 		group:SetNormalTexture('')
 		group:SetPushedTexture('')
@@ -882,14 +882,11 @@ function WFEZ_O:SET_PLAYER(id,p,group,groupID,t,tg,nb)
 	----------------------------------------------------------------------------
 	if not play then -----------------------------------------------------------
 
-		play = WFEZ_O:FRAM(x,"CheckButton",WFEZ_F.child,"ChatConfigCheckButtonTemplate")
+		play = WFEZ_O:FRAM(x,"CheckButton",WFEZ_F.child,nil)
 		play:SetHeight(WFEZ_D.sizes.lines_h)
 
 		play_bg = WFEZ_O:FADE(x.."_bg",play,true,0,"BACKGROUND")
 
-		play:SetNormalTexture('')  play:DisableDrawLayer("BACKGROUND")
-		play:SetPushedTexture('')  play:SetHighlightTexture('')
-		play:SetCheckedTexture('') play:SetDisabledCheckedTexture('')
 
 		-- ICONES --------------------------------------------------------------
 
