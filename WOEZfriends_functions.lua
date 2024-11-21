@@ -1186,11 +1186,9 @@ function WFEZ_O_ADDMENU(self, level)
 	end
 end
 
-hooksecurefunc("FriendsFrameBNDropDown_Initialize", WFEZ_O_ADDMENU)
-hooksecurefunc("FriendsFrameBNOfflineDropDown_Initialize", WFEZ_O_ADDMENU)
+WFEZ_O_ADDMENU(self, level)
 
-hooksecurefunc("FriendsFrameDropDown_Initialize", WFEZ_O_ADDMENU)
-hooksecurefunc("FriendsFrameOfflineDropDown_Initialize", WFEZ_O_ADDMENU)
+--
 
 -- -----------------------------------------------------------------------------
 -- ✔︎ Fake DATAS
