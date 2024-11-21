@@ -1053,16 +1053,7 @@ function WFEZ_O:SET_CLICK(groupID,id,button)
 			else
 				if p.guild then -- wow guild
 					local index = p.guild
-					_G.GuildFrame_LoadUI()
-					_G.SetGuildRosterSelection(index)
-					_G.GuildFrame_Toggle()
-					_G.GuildFrame:Show()
-					_G.GuildFrameTab2:Click()
-					_G.GuildMemberDetailFrame:Show()
-					_G.SetGuildRosterSelection(index)
-					_G.GuildMemberDetailFrame:ClearAllPoints()
-					_G.GuildMemberDetailFrame:SetPoint("TOPLEFT",WFEZ_F.main,"TOPRIGHT",WFEZ_D.sizes.MARGES*3,0)
-					_G.GuildMemberDetailFrame:SetParent(WFEZ_F.main)
+					_G.ToggleGuildFrame()
 				end
 				if p.online and p.bnetid then -- bnet friend
 					ChatFrame_SendBNetTell(p.btag)
