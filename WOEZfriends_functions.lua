@@ -227,6 +227,7 @@ function WFEZ_O:GET_NUMGUILDIES()
 		WFEZ_D.NB_guildies, WFEZ_D.NB_guildies_on = 138,9
 	elseif WF_ez_DBC.player.guild then
 		WFEZ_D.NB_guildies, _, WFEZ_D.NB_guildies_on = GetNumGuildMembers();
+		WFEZ_D.NB_guildies_on = WFEZ_D.NB_guildies_on or 0
 	end
 end
 
