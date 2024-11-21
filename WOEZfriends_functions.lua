@@ -326,7 +326,7 @@ function WFEZ_O:GET_SCORE(fullname,realmName,playerFaction)
 	if playerProfile == nil then return '' end
 
 	if playerProfile.mythicKeystoneProfile ~= nil then
-		currentScore = playerProfile.mythicKeystoneProfile.currentScore or '';
+		currentScore = playerProfile.mythicKeystoneProfile.mainCurrentScore or '';
 		-- previousScore = playerProfile.mythicKeystoneProfile.previousScore or 0;
 	end
 
