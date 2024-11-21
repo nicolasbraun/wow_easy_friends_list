@@ -319,9 +319,7 @@ end
 function WFEZ_O:GET_SCORE(fullname,realmName,playerFaction)
 	if not RaiderIO or WFEZ_D.FAKE then return '' end
 
-	local FACTIONS = { Alliance = 1, Horde = 2, Neutral = 3 }
-	local playerFactionID = FACTIONS[playerFaction or WF_ez_DBC.player.faction]
-	local playerProfile = RaiderIO.GetProfile(fullname, realmName, playerFactionID);
+	local playerProfile = RaiderIO.GetProfile(fullname, realmName);
 	local currentScore = '';
 	local previousScore = '';
 
