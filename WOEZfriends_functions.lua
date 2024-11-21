@@ -131,7 +131,7 @@ function WFEZ_O:FONT(name,where,	z,x,y,yy,zz,	w,h,	font,justifyH)
 	if z then stuff:SetPoint(z,x,y,yy,zz) end
 	if w and h then stuff:SetSize(w,h) end
 		  stuff:SetJustifyH(justifyH)
-		  stuff:SetJustifyV("CENTER")
+		  stuff:SetJustifyV("MIDDLE")
 		  stuff:SetWordWrap(false)
 	return stuff
 end
