@@ -1,0 +1,21 @@
+## Interface: 90205
+## Title: |cffffbb00WO|cffffffffEZ Friends List|r
+## Notes: Manage contact & friends list
+## Version: 1.2
+
+## Author: woOtzee
+## X-Website: https://www.curseforge.com/wow/addons/easy-friends-list
+## X-Curse-Project-ID: 476011
+
+## SavedVariablesPerCharacter: WF_ez_DBC
+
+# Libraries
+Libs\Libs.xml
+TaintLess.xml
+
+# Add-On
+WOEZfriends_datas.lua
+WOEZfriends_functions.lua
+WOEZfriends_frame.lua
+WOEZfriends.lua
+

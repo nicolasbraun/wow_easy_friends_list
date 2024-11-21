@@ -1,0 +1,5 @@
+<Bindings>
+  <Binding name="OPENCLOSE" header="WOEZFRIENDS">
+    WFEZ:CHECK_OPEN();
+  </Binding>
+</Bindings>
