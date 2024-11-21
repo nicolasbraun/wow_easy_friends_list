@@ -117,7 +117,7 @@ function WFEZ_O:ICON(name,where,ico,		z,x,y,		w,h)
 	if w == nil then w = WFEZ_D.fonts.TXT_14 end
 	if h == nil then h = WFEZ_D.fonts.TXT_14 end
 	local obj = name
-	local stuff = _G[obj] or where:CreateTexture(obj,"HIGH")
+	local stuff = _G[obj] or where:CreateTexture(obj,"OVERLAY")
 	if z then stuff:SetPoint(z,x,y) end
 		  stuff:SetSize(w,h)
 		  stuff:SetTexture(ico)
@@ -884,7 +884,7 @@ function WFEZ_O:SET_PLAYER(id,p,group,groupID,t,tg,nb)
 		play = WFEZ_O:FRAM(x,"CheckButton",WFEZ_F.child,"ChatConfigCheckButtonTemplate")
 		play:SetHeight(WFEZ_D.sizes.lines_h)
 
-		play_bg = WFEZ_O:FADE(x.."_bg",play,true,0,"LOW")
+		play_bg = WFEZ_O:FADE(x.."_bg",play,true,0,"BACKGROUND")
 
 		play:SetNormalTexture('')  play:DisableDrawLayer("BACKGROUND")
 		play:SetPushedTexture('')  play:SetHighlightTexture('')
